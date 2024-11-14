@@ -94,7 +94,7 @@ def main():
     wake_up_time = st.time_input("Wake up time", value=None,key = "wake_up_time")
     sleep_time = st.time_input("Sleep", value=None, key = "sleep_time")
 
-    pdf_docs = "ilovepdf_merged.pdf" #kb for routine design in pdf format 
+    pdf_docs = "HabAI\ilovepdf_merged.pdf" #kb for routine design in pdf format 
     raw_text = get_pdf_text(pdf_docs)
     chunks = get_text_chunks(raw_text)
     vector_store = get_vector(chunks)
